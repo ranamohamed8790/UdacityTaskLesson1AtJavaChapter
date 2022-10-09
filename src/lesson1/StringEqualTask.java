@@ -11,7 +11,6 @@ public class StringEqualTask {
         Scanner sc1 = new Scanner(System.in);
         firstUser = sc1.next();
 
-
         // Details of 1st User
         String secondUser = new String();
         System.out.println("Please Enter your Name");
@@ -21,9 +20,6 @@ public class StringEqualTask {
 
         // Print the Result
         System.out.println(firstUser.equals(secondUser));
-
-
-
     }
 
 }
