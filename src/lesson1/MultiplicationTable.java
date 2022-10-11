@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class MultiplicationTable {
     public static void main(String[] args) {
         int number;
-        int multi;
+        int result;
 
         Scanner sc = new Scanner(System.in);
         System.out.println("Please Enter Number");
@@ -13,8 +13,8 @@ public class MultiplicationTable {
 
 
         for (int i =0; i<=10; i++){
-            multi = number * i;
-            System.out.println("Multi =" + multi);
+            result = number * i;
+            System.out.println("Result ="+ number + "*" + i + result);
         }
     }
 }
