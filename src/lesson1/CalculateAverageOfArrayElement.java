@@ -18,7 +18,6 @@ public class CalculateAverageOfArrayElement {
             average = total / 10;
 
         }
-
         System.out.println("The Total of Element Array = " + total);
         System.out.println("The average of Element Array = " + average);
 
