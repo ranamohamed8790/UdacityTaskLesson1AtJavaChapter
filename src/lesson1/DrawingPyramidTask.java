@@ -11,12 +11,8 @@ public class DrawingPyramidTask {
             x[i] = sc.nextLine();
         }
         System.out.println("Value of Pyramid is ");
-
         for (int i=0; i<5; i ++){
-
             System.out.println( x[i]);
-
         }
-
     }
     }
