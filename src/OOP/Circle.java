@@ -1,9 +1,10 @@
 package OOP;
 
 public class Circle {
-
-    //int area;
     int radius;
+    boolean printed;
+    char c;
+    String name;
 
     // Default Constructor
     // not having return type even void and it is public and its name like Class name
