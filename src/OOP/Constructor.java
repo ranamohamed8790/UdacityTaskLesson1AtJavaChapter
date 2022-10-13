@@ -1,15 +1,13 @@
 package OOP;
 
 public class Constructor {
-    int radius;
 
-    // Default Constructor
-    // not having return type even void and it is public and its name like Class name
-    public Constructor(){
+    public  static void main(String[] args) {
+        Circle c1 = new Circle();
+        Circle c2 = new Circle(10);
 
-    }
-    public Constructor (int r){
-        r = radius;
+        System.out.println(c1.radius);
+        System.out.println(c2.radius);
 
     }
 

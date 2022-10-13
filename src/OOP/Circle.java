@@ -3,14 +3,15 @@ package OOP;
 public class Circle {
 
     //int area;
-    public  static void main(String[] args) {
-       // Constructor c1 = new Constructor();
-        Constructor c2 = new Constructor(10);
+    int radius;
 
-        //System.out.println(c1.radius);
-       System.out.println(c2.radius);
+    // Default Constructor
+    // not having return type even void and it is public and its name like Class name
+    public Circle(){
 
-
+    }
+    public Circle (int r){
+       radius = r;
 
     }
 }
