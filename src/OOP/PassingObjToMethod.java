@@ -8,7 +8,7 @@ public class PassingObjToMethod {
     }
 
     public static void print(Encapsulation e2) {
-        System.out.println("The area of circle is " + e2.getArea());
+        System.out.println("Radius " + e2.getRadius() +  "The area of circle is " + e2.getArea());
 
     }
 
