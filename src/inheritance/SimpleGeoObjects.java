@@ -2,7 +2,7 @@ package inheritance;
 
 import java.util.Date;
 
-public class SimpleGeoObjects {
+public class SimpleGeoObjects extends Object {
     private String color = "White";
     private boolean filled;    /**Default Value is "False"*/
     private Date dateCreated;
@@ -11,7 +11,7 @@ public class SimpleGeoObjects {
         dateCreated = new Date();
     }
 
-    public SimpleGeoObjects(String color, boolean filled, Date dateCreated) {
+    public SimpleGeoObjects(String color, boolean filled) {
         this();
         this.color = color;
         this.filled = filled;

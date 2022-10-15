@@ -1,18 +1,23 @@
 package inheritance;
 
 import java.lang.invoke.StringConcatFactory;
+import java.util.Date;
 
-public class CircleFromSimpleGeoObjects extends SimpleGeoObjects{
+public class CircleFromSimpleGeoObjects extends SimpleGeoObjects {
     private double radius;
-    CircleFromSimpleGeoObjects (){
+
+    CircleFromSimpleGeoObjects() {
     }
-    CircleFromSimpleGeoObjects (double radius){
+
+    CircleFromSimpleGeoObjects(double radius) {
         this.radius = radius;
     }
-    CircleFromSimpleGeoObjects (double radius, boolean filled, String color){
-        this.radius=radius;
-        setColor(color);
-        setFilled(filled);
+
+    CircleFromSimpleGeoObjects(double radius, boolean filled, String color) {
+        super(color, filled);
+        this.radius = radius;
+        //setColor(color);
+        //setFilled(filled);
     }
 
     public double getRadius() {
@@ -23,17 +28,23 @@ public class CircleFromSimpleGeoObjects extends SimpleGeoObjects{
         this.radius = radius;
     }
 
-    public double getArea(){
+    public double getArea() {
         return radius * radius * Math.PI;
     }
-    public double getDiameter(){
-        return Math.pow(radius,2);
+
+    public double getDiameter() {
+        return Math.pow(radius, 2);
     }
-    public double getPerimeter(){
+
+    public double getPerimeter() {
         return getDiameter() * Math.PI;
     }
+
+    @Override
     public String toString() {
-        return "Variable of CircleFromSimpleGeoObjects" + "Color =" + getColor()
-                + "is Filled" + isFilled() + "Radius= " + getRadius() + "Created on " + getDateCreated();
+
+//      return "Variable of CircleFromSimpleGeoObjects " + " Rectangle Color = " + getColor()
+//                + " is Filled " + isFilled() + " Radius= " + getRadius();
+        return "Variable of CircleFromSimpleGeoObjects: { Radius=  " + getRadius() + ", " + super.toString() + "}";
     }
 }
