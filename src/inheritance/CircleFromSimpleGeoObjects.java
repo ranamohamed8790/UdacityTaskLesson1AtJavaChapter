@@ -45,6 +45,6 @@ public class CircleFromSimpleGeoObjects extends SimpleGeoObjects {
 
 //      return "Variable of CircleFromSimpleGeoObjects " + " Rectangle Color = " + getColor()
 //                + " is Filled " + isFilled() + " Radius= " + getRadius();
-        return "Variable of CircleFromSimpleGeoObjects: { Radius=  " + getRadius() + ", " + super.toString() + "}";
+        return "Child Circle Class is: { Radius=  " + getRadius() + ", " + super.toString() + "}" + "\n";
     }
 }

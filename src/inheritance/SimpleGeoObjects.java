@@ -37,7 +37,7 @@ public class SimpleGeoObjects extends Object {
         this.filled = filled;
     }
     public String toString(){
-        return "The Parameter of SimpleGeoObjects Class is {Color= " +color + ", filled= "+ filled+" , Created on= "+dateCreated+" }";
+        return "Parent Class Parameter is: {Color= " +color + ", filled= "+ filled+" , Created on= "+dateCreated+" }";
     }
 
 }

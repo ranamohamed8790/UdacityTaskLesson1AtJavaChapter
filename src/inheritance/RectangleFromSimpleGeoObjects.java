@@ -38,10 +38,10 @@ public class RectangleFromSimpleGeoObjects extends SimpleGeoObjects {
 
     @Override
     public String toString() {
-//        return "Variable of Rectangle FromSimpleGeoObjects " + " Rectangle Color = " + getColor()
+//        return "Child Rectangle Class is: " + " Rectangle Color = " + getColor()
 //                + " is Filled " + isFilled() + " Rectangle width= " + (getWidth()) + " Rectangle Height= " + (getHeight())
 //                + " Created on " + getDateCreated();
-        return " Variable of Rectangle FromSimpleGeoObjects:  {Rectangle Width = " + getWidth()
-                + ", Rectangle Height = " + getHeight() + " " + super.toString() + "}";
+        return "Child Rectangle Class is:  {Rectangle Width = " + getWidth()
+                + ", Rectangle Height = " + getHeight() + " " + super.toString() + "}" + "\n";
     }
 }
