@@ -1,18 +1,18 @@
 package inheritance;
 
-public class RectangleFromSimpleGeoObjects extends SimpleGeoObjects {
+public class RectangleFromGeoObjects extends GeoObjects {
     private double width;
     private double height;
 
-    RectangleFromSimpleGeoObjects() {
+    RectangleFromGeoObjects() {
     }
 
-    RectangleFromSimpleGeoObjects(double height, double width) {
+    RectangleFromGeoObjects(double height, double width) {
         this.height = height;
         this.width = width;
     }
 
-    RectangleFromSimpleGeoObjects(double height, double width, boolean filled, String color) {
+    RectangleFromGeoObjects(double height, double width, boolean filled, String color) {
         super(color, filled);
         this.height = height;
         this.width = width;
@@ -35,7 +35,7 @@ public class RectangleFromSimpleGeoObjects extends SimpleGeoObjects {
     public void setHeight(double height) {
         this.height = height;
     }
-
+    // SubClass from abstract parent tell me how to do
     public double getArea() {
         return width * height;
     }
@@ -49,7 +49,7 @@ public class RectangleFromSimpleGeoObjects extends SimpleGeoObjects {
 //        return "Child Rectangle Class is: " + " Rectangle Color = " + getColor()
 //                + " is Filled " + isFilled() + " Rectangle width= " + (getWidth()) + " Rectangle Height= " + (getHeight())
 //                + " Created on " + getDateCreated();
-        return "Child Rectangle Class is:  {Rectangle Width = " + getWidth()
+        return "Abstract Child Rectangle Class is:  {Rectangle Width = " + getWidth()
                 + ", Rectangle Height = " + getHeight() + " " + super.toString() + "}" + "\n";
     }
 }
